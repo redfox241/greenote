@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		E2CFB8B81CCBA51C00575FC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFB8B71CCBA51C00575FC8 /* main.m */; };
 		E2CFB8BB1CCBA51C00575FC8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFB8BA1CCBA51C00575FC8 /* AppDelegate.m */; };
-		E2CFB8BE1CCBA51C00575FC8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFB8BD1CCBA51C00575FC8 /* ViewController.m */; };
 		E2CFB8C41CCBA51C00575FC8 /* greenote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2CFB8C21CCBA51C00575FC8 /* greenote.xcdatamodeld */; };
 		E2CFB8C61CCBA51C00575FC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2CFB8C51CCBA51C00575FC8 /* Assets.xcassets */; };
 		E2CFB8C91CCBA51C00575FC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2CFB8C71CCBA51C00575FC8 /* LaunchScreen.storyboard */; };
+		E2CFB8D21CCDBA1100575FC8 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFB8D11CCDBA1100575FC8 /* BaseViewController.m */; };
+		E2CFB8D51CCDBA6800575FC8 /* MomentListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFB8D41CCDBA6800575FC8 /* MomentListViewController.m */; };
+		E2CFB8D81CCDBA9B00575FC8 /* MomentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFB8D71CCDBA9B00575FC8 /* MomentDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +22,16 @@
 		E2CFB8B71CCBA51C00575FC8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2CFB8B91CCBA51C00575FC8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E2CFB8BA1CCBA51C00575FC8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E2CFB8BC1CCBA51C00575FC8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E2CFB8BD1CCBA51C00575FC8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E2CFB8C31CCBA51C00575FC8 /* greenote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = greenote.xcdatamodel; sourceTree = "<group>"; };
 		E2CFB8C51CCBA51C00575FC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2CFB8C81CCBA51C00575FC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2CFB8CA1CCBA51C00575FC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2CFB8D01CCDBA1100575FC8 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		E2CFB8D11CCDBA1100575FC8 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		E2CFB8D31CCDBA6800575FC8 /* MomentListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MomentListViewController.h; sourceTree = "<group>"; };
+		E2CFB8D41CCDBA6800575FC8 /* MomentListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MomentListViewController.m; sourceTree = "<group>"; };
+		E2CFB8D61CCDBA9B00575FC8 /* MomentDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MomentDetailViewController.h; sourceTree = "<group>"; };
+		E2CFB8D71CCDBA9B00575FC8 /* MomentDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MomentDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +66,12 @@
 			children = (
 				E2CFB8B91CCBA51C00575FC8 /* AppDelegate.h */,
 				E2CFB8BA1CCBA51C00575FC8 /* AppDelegate.m */,
-				E2CFB8BC1CCBA51C00575FC8 /* ViewController.h */,
-				E2CFB8BD1CCBA51C00575FC8 /* ViewController.m */,
+				E2CFB8D31CCDBA6800575FC8 /* MomentListViewController.h */,
+				E2CFB8D41CCDBA6800575FC8 /* MomentListViewController.m */,
+				E2CFB8D01CCDBA1100575FC8 /* BaseViewController.h */,
+				E2CFB8D11CCDBA1100575FC8 /* BaseViewController.m */,
+				E2CFB8D61CCDBA9B00575FC8 /* MomentDetailViewController.h */,
+				E2CFB8D71CCDBA9B00575FC8 /* MomentDetailViewController.m */,
 				E2CFB8C51CCBA51C00575FC8 /* Assets.xcassets */,
 				E2CFB8C71CCBA51C00575FC8 /* LaunchScreen.storyboard */,
 				E2CFB8CA1CCBA51C00575FC8 /* Info.plist */,
@@ -149,10 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2CFB8BE1CCBA51C00575FC8 /* ViewController.m in Sources */,
+				E2CFB8D21CCDBA1100575FC8 /* BaseViewController.m in Sources */,
+				E2CFB8D51CCDBA6800575FC8 /* MomentListViewController.m in Sources */,
 				E2CFB8BB1CCBA51C00575FC8 /* AppDelegate.m in Sources */,
 				E2CFB8C41CCBA51C00575FC8 /* greenote.xcdatamodeld in Sources */,
 				E2CFB8B81CCBA51C00575FC8 /* main.m in Sources */,
+				E2CFB8D81CCDBA9B00575FC8 /* MomentDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

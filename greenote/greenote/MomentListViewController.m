@@ -1,0 +1,44 @@
+//
+//  MomentListViewController.m
+//  greenote
+//
+//  Created by xiaojing on 16/4/25.
+//  Copyright © 2016年 zhaochuanyong. All rights reserved.
+//
+
+#import "MomentListViewController.h"
+
+@interface MomentListViewController ()
+
+@end
+
+@implementation MomentListViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    
+    //自定义title
+    [self setSingleLineTitle:@"笔记"];
+    
+    //添加tableview
+    
+    
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end
