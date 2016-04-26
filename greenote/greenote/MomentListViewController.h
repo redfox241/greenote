@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface MomentListViewController : BaseViewController
+@interface MomentListViewController : BaseViewController <UITableViewDataSource,UITableViewDelegate>
 
 @end

@@ -22,6 +22,13 @@
     [self setSingleLineTitle:@"笔记"];
     
     //添加tableview
+    UITableView *tableView = [ [ UITableView alloc ] initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64) ] ;
+
+    [self.view addSubview:tableView];
+    tableView.dataSource = self;
+    tableView.delegate = self;
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
     
 }
@@ -29,6 +36,48 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(NSInteger) tableView:(nonnull UITableView*) tableView numberOfRowsInSection:(NSInteger)section{
+    return 1;
+}
+
+-(UITableViewCell *) tableView:(nonnull UITableView *) tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
+
+    UITableViewCell *cell = [ tableView dequeueReusableCellWithIdentifier:@"moment"];
+    
+    if( cell == nil ){
+        
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"moment"] ;
+        
+        UILabel *dayLable = [[UILabel alloc] initWithFrame:CGRectMake(0, 16, 47, 46)];
+        dayLable.text = @"7";
+        dayLable.textColor = [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:0.3];
+        dayLable.textAlignment = NSTextAlignmentRight;
+        dayLable.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:40];
+        [cell.contentView addSubview:dayLable];
+        
+        UILabel *dayOfWeekLabel = [[UILabel alloc] initWithFrame:CGRectMake(52, 23, 36, 15)];
+        dayOfWeekLabel.textColor = [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:0.3];
+        dayOfWeekLabel.font = [UIFont systemFontOfSize:12];
+        dayOfWeekLabel.textAlignment = NSTextAlignmentLeft;
+        dayOfWeekLabel.text = @"星期五";
+        [cell.contentView addSubview:dayOfWeekLabel];
+        
+        UILabel *yearAndMonthLabel = [[UILabel alloc] initWithFrame:CGRectMake(52, 38, 160, 15)];
+        yearAndMonthLabel.font = [UIFont systemFontOfSize:12];
+        yearAndMonthLabel.textColor = [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:0.3];
+        yearAndMonthLabel.textAlignment = NSTextAlignmentLeft;
+        yearAndMonthLabel.text = @"2016年04月";
+        [cell.contentView addSubview:yearAndMonthLabel];
+
+    }
+    
+    return cell;
+}
+
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 200;
 }
 
 /*
