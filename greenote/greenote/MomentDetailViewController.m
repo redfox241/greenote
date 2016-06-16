@@ -18,12 +18,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.title = @"详情";
+    
     // add content to view
     UILabel *textContent = [[UILabel alloc] initWithFrame:CGRectMake(20,88,[UIScreen mainScreen].bounds.size.width - 40, 20)];
-    textContent.text = @"天街小雨润入酥 草色遥看近却无 最是一年风景 绝胜烟柳满皇都";
+    textContent.text = @"天街小雨润入酥 草色遥看近却无 \n 最是一年好风景 绝胜烟柳满皇都";
     textContent.textColor = [UIColor blackColor];
     textContent.font = [UIFont systemFontOfSize:15];
-    textContent.textAlignment = NSTextAlignmentLeft;
+    textContent.textAlignment = NSTextAlignmentCenter;
+    
+    textContent.lineBreakMode = UILineBreakModeWordWrap;
+    textContent.numberOfLines = 0;
     
     [self.view addSubview:textContent];
     

@@ -7,6 +7,7 @@
 //
 
 #import "MomentListViewController.h"
+#import "MomentDetailViewController.h"
 
 @interface MomentListViewController ()
 
@@ -71,6 +72,7 @@
         yearAndMonthLabel.textAlignment = NSTextAlignmentLeft;
         yearAndMonthLabel.text = @"2016年04月";
         [cell.contentView addSubview:yearAndMonthLabel];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
 
     }
     
@@ -79,6 +81,14 @@
 
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 200;
+}
+
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    MomentDetailViewController *detail = [[MomentDetailViewController alloc] init];
+    
+    [self.navigationController pushViewController:detail animated:YES];
+    
 }
 
 /*

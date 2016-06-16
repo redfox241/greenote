@@ -1,0 +1,7 @@
+platform :ios,'9.0'
+target 'greenote' do
+    pod 'AFNetworking','~>3.0'
+    pod 'FLEX','~>2.3'
+    pod 'MJRefresh','~>3.1'
+    pod 'IAPManager','~>0.2.4'
+end

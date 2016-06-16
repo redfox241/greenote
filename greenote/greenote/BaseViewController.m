@@ -20,10 +20,12 @@
     
     //设置自定义背景颜色
     UIColor *gray = [ UIColor colorWithRed:0.95 green:0.95 blue:0.95 alpha:1];
+//    UIColor *gray = UIColorFromHex( 0x51A7F9 );
     self.view.backgroundColor = gray;
     
     //设置自定义导航栏
-    self.navigationController.navigationBar.barTintColor = [[UIColor alloc] initWithRed:0.2 green:0.72 blue:0.46 alpha:1];
+//    self.navigationController.navigationBar.barTintColor = [[UIColor alloc] initWithRed:0.2 green:0.72 blue:0.46 alpha:1];
+    self.navigationController.navigationBar.barTintColor = UIColorFromHex(0x51A7F9);
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     
 }
