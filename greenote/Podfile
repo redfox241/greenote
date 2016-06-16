@@ -4,4 +4,5 @@ target 'greenote' do
     pod 'FLEX','~>2.3'
     pod 'MJRefresh','~>3.1'
     pod 'IAPManager','~>0.2.4'
+    pod 'sqlite3' ,'~>3.13.0'
 end

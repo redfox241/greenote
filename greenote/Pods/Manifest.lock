@@ -17,19 +17,24 @@ PODS:
   - FLEX (2.3.0)
   - IAPManager (0.2.4)
   - MJRefresh (3.1.0)
+  - sqlite3 (3.13.0):
+    - sqlite3/common (= 3.13.0)
+  - sqlite3/common (3.13.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - FLEX (~> 2.3)
   - IAPManager (~> 0.2.4)
   - MJRefresh (~> 3.1)
+  - sqlite3 (~> 3.13.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   FLEX: ba80ea13d2c784e85e616137fd4eff164781e364
   IAPManager: 0e5336926a1a88ab372861e77eb0203cb0d8ef21
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
+  sqlite3: c8b1b937fe823ab46411e471cdc1aa92d1b106ce
 
-PODFILE CHECKSUM: 1b97a214d319780d980437c836291098c23b4959
+PODFILE CHECKSUM: f7d254c8b13d51bed0a75b2d969cf477228c18b3
 
 COCOAPODS: 1.0.0
